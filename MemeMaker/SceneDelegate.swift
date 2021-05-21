@@ -1,3 +1,10 @@
+//
+//  SceneDelegate.swift
+//  MemeMaker
+//
+//  Created by Brian Foutty on 3/17/21.
+//
+
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

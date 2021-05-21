@@ -57,8 +57,8 @@
                                     <outletCollection property="gestureRecognizers" destination="iFx-gj-ceC" appends="YES" id="PaO-HW-lcx"/>
                                 </connections>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="e5M-5G-ZPa">
-                                <rect key="frame" x="142" y="648" width="131" height="31"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="e5M-5G-ZPa">
+                                <rect key="frame" x="142" y="648" width="130" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="yXn-h4-rXu"/>
                                 </constraints>
@@ -83,10 +83,19 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THJ-MH-FRY">
+                                <rect key="frame" x="100" y="708" width="214" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveMeme:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wu6-9e-11s"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="THJ-MH-FRY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="0ZZ-MF-lGA"/>
                             <constraint firstItem="x7i-BQ-VbS" firstAttribute="bottom" secondItem="JGW-zZ-RPx" secondAttribute="bottom" id="1ix-yd-Crb"/>
                             <constraint firstItem="x7i-BQ-VbS" firstAttribute="top" secondItem="PsB-np-zUQ" secondAttribute="bottom" constant="38" id="4RB-Bo-Uti"/>
                             <constraint firstItem="x7i-BQ-VbS" firstAttribute="leading" secondItem="JGW-zZ-RPx" secondAttribute="leading" id="4aZ-am-wPD"/>
@@ -96,7 +105,9 @@
                             <constraint firstItem="x7i-BQ-VbS" firstAttribute="trailing" secondItem="JGW-zZ-RPx" secondAttribute="trailing" id="ZqY-Ft-f78"/>
                             <constraint firstItem="PsB-np-zUQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="aFj-z0-vXc"/>
                             <constraint firstItem="e5M-5G-ZPa" firstAttribute="centerX" secondItem="JGW-zZ-RPx" secondAttribute="centerX" id="cUg-wM-8oZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="THJ-MH-FRY" secondAttribute="trailing" constant="100" id="dEX-Jt-mnW"/>
                             <constraint firstItem="x7i-BQ-VbS" firstAttribute="leading" secondItem="QWz-pp-5Wr" secondAttribute="leading" id="ktJ-eI-0KF"/>
+                            <constraint firstItem="THJ-MH-FRY" firstAttribute="top" secondItem="e5M-5G-ZPa" secondAttribute="bottom" constant="30" id="lXa-Xh-xo4"/>
                             <constraint firstItem="PsB-np-zUQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="151" id="mnx-zf-IoR"/>
                             <constraint firstItem="PsB-np-zUQ" firstAttribute="leading" secondItem="e5M-5G-ZPa" secondAttribute="leading" id="p8a-RF-5VJ"/>
                             <constraint firstItem="x7i-BQ-VbS" firstAttribute="trailing" secondItem="QWz-pp-5Wr" secondAttribute="trailing" id="pYW-OJ-8bc"/>
