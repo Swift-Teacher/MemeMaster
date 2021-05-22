@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import CoreImage
+import CoreImage // #27
 
 // #13
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
