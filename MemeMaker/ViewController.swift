@@ -21,6 +21,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var topCaptionLabel: UILabel!
     @IBOutlet weak var bottomCaptionLabel: UILabel!
     
+    // #38
     @IBOutlet weak var shareButton: UIBarButtonItem!
     
     // MARK: - Instance Properties
@@ -100,9 +101,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         saveImageAndText()
     }
     
-    // #38
+    // #39
     @IBAction func shareMeme(_ sender: Any) {
-        // #41
+        // #42
         shareTapped()
     }
     
@@ -187,9 +188,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
-    // #39
+    // #40
     func shareTapped() {
-        // #40
+        // #41
         saveImageAndText() // leave this out of initial share and use imageView.image? instead of currentImage
         guard let image = currentImage.jpegData(compressionQuality: 0.8) else { return }
         let view = UIActivityViewController(activityItems: [image], applicationActivities: [])
