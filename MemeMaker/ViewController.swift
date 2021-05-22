@@ -8,6 +8,7 @@
 import UIKit
 import CoreImage
 
+// #13
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     // MARK: - IB Outlets
@@ -19,6 +20,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBOutlet weak var topCaptionLabel: UILabel!
     @IBOutlet weak var bottomCaptionLabel: UILabel!
+    
+    @IBOutlet weak var shareButton: UIBarButtonItem!
     
     // MARK: - Instance Properties
     // #26a
@@ -82,7 +85,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
+    // #11
     @IBAction func importPicture(_ sender: Any) {
+        // #12
         let picker = UIImagePickerController()
         picker.allowsEditing = true
         picker.delegate = self
@@ -95,7 +100,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         saveImageAndText()
     }
     
-    
+    // #38
+    @IBAction func shareMeme(_ sender: Any) {
+        // #41
+        shareTapped()
+    }
     
     
     // MARK: - Instance Methods
@@ -176,6 +185,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             alert.addAction(UIAlertAction(title: "OK", style: .default))
             present(alert, animated: true)
         }
+    }
+    
+    // #39
+    func shareTapped() {
+        // #40
+        saveImageAndText() // leave this out of initial share and use imageView.image? instead of currentImage
+        guard let image = currentImage.jpegData(compressionQuality: 0.8) else { return }
+        let view = UIActivityViewController(activityItems: [image], applicationActivities: [])
+        view.popoverPresentationController?.barButtonItem = shareButton
+        present(view, animated: true)
     }
     
 }

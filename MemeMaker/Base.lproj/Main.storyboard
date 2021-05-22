@@ -30,11 +30,14 @@
                                 </connections>
                             </segmentedControl>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x7i-BQ-VbS">
-                                <rect key="frame" x="32" y="263" width="351" height="350"/>
+                                <rect key="frame" x="32" y="263" width="350" height="350"/>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="dpr-aF-81d"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOP" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="QWz-pp-5Wr">
-                                <rect key="frame" x="32" y="263" width="351" height="43"/>
+                                <rect key="frame" x="32" y="263" width="350" height="43"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Heavy" family="Avenir Next Condensed" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -46,7 +49,7 @@
                                 </connections>
                             </label>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOTTOM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="JGW-zZ-RPx">
-                                <rect key="frame" x="32" y="570" width="351" height="43"/>
+                                <rect key="frame" x="32" y="570" width="350" height="43"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-Heavy" family="Avenir Next Condensed" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -58,7 +61,7 @@
                                 </connections>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="e5M-5G-ZPa">
-                                <rect key="frame" x="142" y="648" width="131" height="31"/>
+                                <rect key="frame" x="142" y="648" width="130" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="yXn-h4-rXu"/>
                                 </constraints>
@@ -70,9 +73,8 @@
                                     <action selector="segmentedControlChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="fmN-Kv-tL5"/>
                                 </connections>
                             </segmentedControl>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="veB-GL-LwN">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="veB-GL-LwN">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="MemeMaster" id="UMA-zj-aOo">
                                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="snO-pi-H0T">
@@ -80,7 +82,11 @@
                                                 <action selector="importPicture:" destination="BYZ-38-t0r" id="qU1-DU-DrZ"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="VxU-69-gM7"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="VxU-69-gM7">
+                                            <connections>
+                                                <action selector="shareMeme:" destination="BYZ-38-t0r" id="MBR-X1-ThW"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -97,29 +103,34 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="THJ-MH-FRY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="0ZZ-MF-lGA"/>
-                            <constraint firstItem="x7i-BQ-VbS" firstAttribute="bottom" secondItem="JGW-zZ-RPx" secondAttribute="bottom" id="1ix-yd-Crb"/>
-                            <constraint firstItem="x7i-BQ-VbS" firstAttribute="top" secondItem="PsB-np-zUQ" secondAttribute="bottom" constant="38" id="4RB-Bo-Uti"/>
-                            <constraint firstItem="x7i-BQ-VbS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JGW-zZ-RPx" secondAttribute="leading" id="4aZ-am-wPD"/>
-                            <constraint firstItem="x7i-BQ-VbS" firstAttribute="top" secondItem="QWz-pp-5Wr" secondAttribute="top" id="ASR-mz-qd0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e5M-5G-ZPa" secondAttribute="bottom" constant="184" id="KeY-a6-zFL"/>
-                            <constraint firstItem="x7i-BQ-VbS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="M7f-yf-wyr"/>
-                            <constraint firstItem="x7i-BQ-VbS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JGW-zZ-RPx" secondAttribute="trailing" id="ZqY-Ft-f78"/>
-                            <constraint firstItem="PsB-np-zUQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="aFj-z0-vXc"/>
-                            <constraint firstItem="e5M-5G-ZPa" firstAttribute="centerX" secondItem="JGW-zZ-RPx" secondAttribute="centerX" id="cUg-wM-8oZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="THJ-MH-FRY" secondAttribute="trailing" constant="100" id="dEX-Jt-mnW"/>
-                            <constraint firstItem="x7i-BQ-VbS" firstAttribute="leading" secondItem="QWz-pp-5Wr" secondAttribute="leading" id="ktJ-eI-0KF"/>
+                            <constraint firstItem="veB-GL-LwN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6Ws-u3-iYt"/>
+                            <constraint firstItem="x7i-BQ-VbS" firstAttribute="top" secondItem="QWz-pp-5Wr" secondAttribute="top" id="7jx-vA-rhG"/>
+                            <constraint firstItem="PsB-np-zUQ" firstAttribute="leading" secondItem="e5M-5G-ZPa" secondAttribute="leading" id="9Aw-6i-Rim"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e5M-5G-ZPa" secondAttribute="bottom" constant="184" id="CLw-6C-N4c"/>
+                            <constraint firstItem="x7i-BQ-VbS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Lbk-YQ-AM5"/>
+                            <constraint firstItem="x7i-BQ-VbS" firstAttribute="trailing" secondItem="JGW-zZ-RPx" secondAttribute="trailing" id="Mbv-VF-tKs"/>
+                            <constraint firstItem="x7i-BQ-VbS" firstAttribute="leading" secondItem="QWz-pp-5Wr" secondAttribute="leading" id="PHq-tH-XTD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="THJ-MH-FRY" secondAttribute="trailing" constant="100" id="PLf-To-wPE"/>
+                            <constraint firstItem="PsB-np-zUQ" firstAttribute="trailing" secondItem="e5M-5G-ZPa" secondAttribute="trailing" id="TtU-mv-sBV"/>
+                            <constraint firstItem="PsB-np-zUQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="Uq7-XL-YeQ"/>
+                            <constraint firstItem="PsB-np-zUQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="151" id="c9Q-vS-8go"/>
+                            <constraint firstItem="e5M-5G-ZPa" firstAttribute="top" secondItem="x7i-BQ-VbS" secondAttribute="bottom" constant="35" id="d16-FQ-8z6"/>
+                            <constraint firstItem="veB-GL-LwN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dX9-36-ElU"/>
+                            <constraint firstItem="x7i-BQ-VbS" firstAttribute="bottom" secondItem="JGW-zZ-RPx" secondAttribute="bottom" id="daB-q8-YtL"/>
+                            <constraint firstItem="e5M-5G-ZPa" firstAttribute="centerX" secondItem="JGW-zZ-RPx" secondAttribute="centerX" id="gry-fp-ram"/>
+                            <constraint firstItem="PsB-np-zUQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ip3-NH-ZUK"/>
+                            <constraint firstItem="veB-GL-LwN" firstAttribute="centerX" secondItem="PsB-np-zUQ" secondAttribute="centerX" id="keN-je-BlS"/>
                             <constraint firstItem="THJ-MH-FRY" firstAttribute="top" secondItem="e5M-5G-ZPa" secondAttribute="bottom" constant="30" id="lXa-Xh-xo4"/>
-                            <constraint firstItem="PsB-np-zUQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="151" id="mnx-zf-IoR"/>
-                            <constraint firstItem="PsB-np-zUQ" firstAttribute="leading" secondItem="e5M-5G-ZPa" secondAttribute="leading" id="p8a-RF-5VJ"/>
-                            <constraint firstItem="x7i-BQ-VbS" firstAttribute="trailing" secondItem="QWz-pp-5Wr" secondAttribute="trailing" id="pYW-OJ-8bc"/>
-                            <constraint firstItem="e5M-5G-ZPa" firstAttribute="top" secondItem="x7i-BQ-VbS" secondAttribute="bottom" constant="35" id="usi-23-g8w"/>
-                            <constraint firstItem="PsB-np-zUQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yT2-Gj-m4e"/>
+                            <constraint firstItem="x7i-BQ-VbS" firstAttribute="leading" secondItem="JGW-zZ-RPx" secondAttribute="leading" id="olQ-Pw-GrM"/>
+                            <constraint firstItem="x7i-BQ-VbS" firstAttribute="top" secondItem="PsB-np-zUQ" secondAttribute="bottom" constant="38" id="uFK-xb-15Q"/>
+                            <constraint firstItem="x7i-BQ-VbS" firstAttribute="trailing" secondItem="QWz-pp-5Wr" secondAttribute="trailing" id="wP8-US-Llz"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bottomCaptionLabel" destination="JGW-zZ-RPx" id="CyW-wC-Ikp"/>
                         <outlet property="bottomSegmentedControl" destination="e5M-5G-ZPa" id="awx-xB-lUb"/>
                         <outlet property="imageView" destination="x7i-BQ-VbS" id="AsM-kg-C1T"/>
+                        <outlet property="shareButton" destination="VxU-69-gM7" id="xYF-6U-DBV"/>
                         <outlet property="topCaptionLabel" destination="QWz-pp-5Wr" id="zS9-zI-sND"/>
                         <outlet property="topSegmentedControl" destination="PsB-np-zUQ" id="t1D-Db-BCb"/>
                     </connections>
