@@ -2,7 +2,7 @@
 A single-view app where the user can choose a photo from their Photo Library and apply one of five phrases for the top and bottom of the photo. This app is an extension of the MemeMaker app created as part of Apple's **Develop in Swift Explorations** ([Teacher](https://books.apple.com/us/book/develop-in-swift-explorations-teacher-guide/id1511184084) and [Student](https://books.apple.com/us/book/develop-in-swift-explorations/id1511184149)) course. The project can be found in Unit 4 starting on page 384 in the Student book and starting on page 589 in the Teacher Guide. 
 
 ## Background 👩🏼‍🎓 🧑🏿‍🎓 👨🏽‍🎓 👩🏻‍💻 👨🏾‍💻
-This project works under the assumption that you or your students have built the Rock Paper Scissors app using Apple's **Develop in Swift Explorations** course. So, if you have not done that already you will need to go and do that before creating this app because adds further functionality to the original MemeMaker app. I think this project can be done after you and your students have worked through the entire **Develop in Swift Fundamentals** ([Teacher](https://books.apple.com/us/book/develop-in-swift-fundamentals-teacher-guide/id1511184161) and [Student](https://books.apple.com/us/book/develop-in-swift-fundamentals/id1511184145)) course. I used this project as a fun way to wrap up the Fundamentals course with a fun update to an app we had previously made.
+This project works under the assumption that you or your students have built the MemeMaker app using Apple's **Develop in Swift Explorations** course. So, if you have not done that already you will need to go and do that before creating this app because adds further functionality to the original MemeMaker app. I think this project can be done after you and your students have worked through the entire **Develop in Swift Fundamentals** ([Teacher](https://books.apple.com/us/book/develop-in-swift-fundamentals-teacher-guide/id1511184161) and [Student](https://books.apple.com/us/book/develop-in-swift-fundamentals/id1511184145)) course. I used this project as a fun way to wrap up the Fundamentals course with a fun update to an app we had previously made.
 
 This project also gives me yet another opportunity to teach versioning, software iteration, and the software development process. The project also gave me the opportunity to introduce a new framework: CoreImage and all of the work it takes to research and implement new functionality. I think it is important for students to at the very least get as much practice as possible implementing Apple frameworks into a project. The MemeMaster project enables me to give my students an introduction to picking, editing, and manipulating images, which is one of the most popular features of many of the most popular iOS apps.
 
@@ -235,9 +235,9 @@ func shareTapped() {
         4.  In the Menu bar, click Source Control > Push. This will send the changes just merged into the main branch to the main branch on GitHub or your chosen repository hosting service.
 46. This updated version of the app is now complete. Congratulations!!
 
-The repo for the app made in the screencasts can be found here: [MemeMaster - Tutorial](https://github.com/Swift-Teacher/).
+The repo for the app made in the screencasts can be found here: [MemeMaster - Tutorial](https://github.com/Swift-Teacher/MemeMaster---Tutorial).
 
-You can find a write up of my process, sample materials, and screencasts of the process I used at my blog: [Swift Teacher Blog](https://www.swiftteacher.org/).
+You can find a write up of my process, sample materials, and screencasts of the process I used at my blog: [Swift Teacher Blog](https://www.swiftteacher.org/swift-teacher/2021/5/26/to-meme-or-not-to-meme-that-is-the-question).
 
 
 
