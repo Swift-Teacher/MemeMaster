@@ -26,7 +26,7 @@
 		5A042B6B243548AB000BC283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A042B6D243548AB000BC283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A042B73243556D1000BC283 /* CaptionOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionOption.swift; sourceTree = "<group>"; };
-		823C692E266A8E2900708B33 /* MemeMaster Apply.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "MemeMaster Apply.pdf"; sourceTree = "<group>"; };
+		823C692E266A8E2900708B33 /* MemeMaster Apply guide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "MemeMaster Apply guide.pdf"; sourceTree = "<group>"; };
 		EBEE45D02658312D00BF30E5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,7 +44,7 @@
 		5A042B53243548AA000BC283 = {
 			isa = PBXGroup;
 			children = (
-				823C692E266A8E2900708B33 /* MemeMaster Apply.pdf */,
+				823C692E266A8E2900708B33 /* MemeMaster Apply guide.pdf */,
 				EBEE45D02658312D00BF30E5 /* README.md */,
 				5A042B5E243548AA000BC283 /* MemeMaker */,
 				5A042B5D243548AA000BC283 /* Products */,
