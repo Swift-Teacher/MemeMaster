@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PsB-np-zUQ">
-                                <rect key="frame" x="142" y="195" width="130" height="31"/>
+                                <rect key="frame" x="141.5" y="195" width="131" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ehA-lk-GB0"/>
                                 </constraints>
@@ -61,7 +61,7 @@
                                 </connections>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="e5M-5G-ZPa">
-                                <rect key="frame" x="142" y="648" width="130" height="31"/>
+                                <rect key="frame" x="141.5" y="648" width="131" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="yXn-h4-rXu"/>
                                 </constraints>
@@ -112,7 +112,7 @@
                             <constraint firstItem="x7i-BQ-VbS" firstAttribute="leading" secondItem="QWz-pp-5Wr" secondAttribute="leading" id="PHq-tH-XTD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="THJ-MH-FRY" secondAttribute="trailing" constant="100" id="PLf-To-wPE"/>
                             <constraint firstItem="PsB-np-zUQ" firstAttribute="trailing" secondItem="e5M-5G-ZPa" secondAttribute="trailing" id="TtU-mv-sBV"/>
-                            <constraint firstItem="PsB-np-zUQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="Uq7-XL-YeQ"/>
+                            <constraint firstItem="PsB-np-zUQ" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="Uq7-XL-YeQ"/>
                             <constraint firstItem="PsB-np-zUQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="151" id="c9Q-vS-8go"/>
                             <constraint firstItem="e5M-5G-ZPa" firstAttribute="top" secondItem="x7i-BQ-VbS" secondAttribute="bottom" constant="35" id="d16-FQ-8z6"/>
                             <constraint firstItem="veB-GL-LwN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dX9-36-ElU"/>
