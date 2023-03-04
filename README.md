@@ -17,9 +17,9 @@ The general process and flow of this project is in the format of an Apple Teache
 You can learn more about and sign up for Apple Teacher here: [Apple Teacher](https://www.apple.com/education/k12/teacher-resources/). 
 
 ### Activate
-We want our students to activate any prior knowledge on the topic. Since the students have previously made the MemeMaker app, they will all have the starting point of the project. However, the goal of the project is to greatly improve the app and enable the user to use their own photos create a meme. Here is the activity I use with my students:
+We want our students to activate any prior knowledge on the topic. Since the students have previously made the MemeMaker app, they will all have the starting point of the project. However, the goal of the project is to add functionality to the app and enable the user to use their own photos create a meme. Here is the activity I use with my students:
 
-1.  Take a selfie.
+1. Take a selfie.
 2. Open Keynote and pick a basic white or basic black project.
 3. Insert your selfie into the slide, adjust the size of the picture so that it covers the entire slide.
 4. You can adjust the transparency level of the picture to mimic a filter feature.
@@ -30,11 +30,15 @@ We want our students to activate any prior knowledge on the topic. Since the stu
 ### Explore
 Students will now create a prototype of a meme making app.
 
-1. Open Keynote.
-2. We are going to prototype a meme making app.
-3. Set the slide background color to be the same color you would have for a meme making app that you would build.
-4. Search shapes for phone. Drag the iPhone onto the screen and resize it so that it is the full height of the slide.
-5. Use elements in the Shape section and text boxes to create your meme app prototype. Be sure to include your meme from the Activate lesson as the example meme for your prototype.
+1. Open the student's existing MemeMaker app.
+2. Open Keynote.
+3. We are going to prototype the MemeMaker update.
+4. Set the slide background color that the student currently has in their current MemeMaker app.
+5. Search shapes for phone. Drag the iPhone onto the screen and resize it so that it is the full height of the slide.
+6. Use elements in the Shape section and text boxes to create your meme app prototype. Be sure to include your meme from the Activate lesson as the example meme for your prototype.
+7. Rebuild the student's MemeMaker app in Keynote.
+8. Have students add two extra elements for the top and bottom phrases.
+9. Have students add those two extra phrases for each the top and bottom in the Keynote slide comments.
 
 
 ### Apply 
