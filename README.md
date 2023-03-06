@@ -58,6 +58,12 @@ In this part of the project we build the app.
 10. Create an outlet from the imageView and name it `imageView`.
 11. Create an action from the Add button and name it `importPicture()`
 12. Add this code to `importPicture()` - the code will generate an error. We will fix it in the next step.
+```swift
+    let picker = UIImagePickerController()
+        picker.allowsEditing = true
+        picker.delegate = self
+        present(picker, animated: true)
+```
 13. Add the following to the ViewController class declarations: 
 ```swift
     UIImagePickerControllerDelegate, UINavigationControllerDelegate
